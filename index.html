@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang= "eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Super</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../SEI-OWLS-P1/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="company-title">
+            <h1 class="company-name">Super</h1>
+        </div>
+        <nav class="company-about">
+            <a class="nav-left">Our products</a>
+            <a class="nav-left">Our company</a>
+            <a class="nav-left">Safety</a>
+            <a class="nav-left">Help</a>
+        </nav>
+        <div class="login-header">
+            <i id="nav-globe" class="fas fa-globe"></i>
+            <a id="nav-en" class="header-end">EN</a>
+            <a id="login-button" class="header-end" onclick="showLogin()">Login</a>
+
+            <button id="sign-up-button" class="header-end">Sign Up</button>
+            <i class="fas fa-bars fa-lg"></i>
+
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="icons">
+                <div class="row" id="careers-icon" onClick="showCareers()">
+                    <i class="fas fa-signal fa-lg"></i>
+                    <h2>Careers</h2>
+                </div>
+                <div class="row" id="planes-icon" onClick="showPlanes()">
+                    <i class="fas fa-plane fa-lg"></i>
+                    <h2>Planes</h2>
+                </div>
+                <div class="row" id="ride-icon">
+                    <i class="fas fa-car-side fa-lg"></i>
+                    <h2>Ride</h2>
+                </div>
+                <div class="row" id="eat-icon">
+                    <i class="fas fa-utensils fa-lg"></i>
+                <h2>Eat</h2>
+                </div>
+                <div class="row" id="freight-icon">
+                    <i class="fas fa-truck fa-lg"></i>
+                    <h2>Freight</h2>
+                </div>
+                <div class="row" id="business-icon">
+                    <i class="fas fa-briefcase fa-lg"></i>
+                    <h2>Business</h2>
+
+                </div>
+                <div class="row" id="work-icon">
+                    <i class="fas fa-building fa-lg"></i>
+                    <h2>Work</h2>
+                </div>
+                <div class="row" id="bike-icon">
+                    <i class="fas fa-bicycle fa-lg"></i>
+                    <h2>Bike</h2>
+                </div>
+            </div>
+            <div class="icon-info" id="showhideAnimation" style="display:block;"><div class="animate">Come Fly With Super</div></div>
+<!-- LOG IN START-->   
+                <div id="container-login" class="login-container" style="display:none;">
+                    <div class="login-left">
+                        <div class="employee-top">
+                            <i class="fas fa-plane-departure fa-5x"></i>
+                            <h2 class="employee">Employee Login</h2>
+                        </div>
+                        <div class="employee-middle">
+                            <input class="login-bar" name="input" placeholder="Username" type="text" required autocomplete="off"/>
+                            <input class="login-bar" name="input" placeholder="Password" type="text" required autocomplete="off"/>
+                        </div>
+                        <div class="employee-bottom">
+                            <button class="employee-signin">Sign In</button>
+                            <button class="employee-password">Forgot Password?</button>
+                        </div>
+                    </div>
+                    <div class="login-middle"></div>
+                    <div class="login-right">
+                            <div class="employee-top">
+                                    <i class="fas fa-user fa-5x"></i>
+                                    <h2 class="employee">Customer Login</h2>
+                                </div>
+                                <div class="employee-middle">
+                                    <input class="login-bar" name="input" placeholder="Username" type="text" required autocomplete="off"/>
+                                    <input class="login-bar" name="input" placeholder="Password" type="text" required autocomplete="off"/>
+                                </div>
+                                <div class="employee-bottom">
+                                    <button class="employee-signin">Sign In</button>
+                                    <button class="employee-password">Forgot Password?</button>
+                                </div>
+                            </div>
+                    </div>
+                   
+<!-- LOG IN END -->
+
+
+<!-- CAREERS START -->
+                <div id="container-careers" class="careers" style="display:none;">
+                    <div class="careers-data">
+                        <div class="first-bar"></div>
+                        <div class="careers-title">
+                            <h1 class="pilot">Pilot with Super</h1>
+                        </div>
+                        <div class="sub-careers-title">
+                            <h3 class="active-users">Pilot on the largest network of active flyers.</h3>
+                        </div>
+                        <div class="earn">
+                            <h2 class="earn-title">Earn at least <span class="money">$5000</span> for your first 400 trips</h2>
+                        </div>
+                        <div class="careers-signup">
+                            <button class="signup-button">Sign up to Pilot</button>
+                        </div>
+                        <div class="learn">
+                            <a class="learn-more" href="www.google.com"><u>Learn More</u></a>
+                        </div>
+                        <div class="extra-info">
+                            <p class="extra-text">You must sign up by clicking on the <b>Sign up to pilot</b> box on this page to be eligible for this offer.
+                            <p class="extra2"><a href="www.google.com">*Terms May Apply ></a></p>
+                        </div>
+                    </div>
+                    <div class="careers-pic"></div>
+                </div>
+                 
+<!-- CAREERS END -->
+
+
+
+<!-- PLANES START -->
+            <!-- <div class="planes-none"> -->
+                <div id="container-planes" class="planes-container" style="display:none;">
+                    <div class="icon-data">
+                        <div class="bar"></div>
+                        <div class="icon-title">
+                            <h1 class="schedule-flight">Schedule a flight with us</h1>
+                        </div>
+                        <div class="start-end">
+                            <input name="input" placeholder="Enter Pickup Location" type="text" required autocomplete="off"/>
+                            <input name="input" placeholder="Enter Destination" type="text" required autocomplete="off"/>
+                            <!-- <div> -->
+                            <div class="test">
+                                    <div class="square"></div>
+                                    <div class="line"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                        <div class="coordinate">
+                            <button class="request">Pickup Now</button>
+                            <button class="schedule">Future Bookings</button>
+                        </div>
+                    </div>
+
+                    <div class="icon-picture"></div>
+                </div>
+            <!-- </div>     -->
+<!-- PLANES END -->
+
+
+
+            </div>
+        
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="left-footer">
+                <div class="left-footer-1">
+                    <h1 class="footer-super">Super</h1>
+                    <div class="footer-icon">
+                        <i class="fas fa-question-circle fa-lg"></i>
+                        <a class="icon-words">Help Center</a>
+                    </div>
+                    <div class="footer-icon">
+                        <i class="fas fa-globe-americas fa-lg"></i>
+                        <a class="icon-words">International</a>
+                    </div>
+                    <div class="footer-icon">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        <a id="nyc" class="icon-words">New York City</a>
+                    </div>
+                </div>
+                <div class="left-footer-2">
+                    <div class="download1"></div>
+                    <div class="download2"></div>
+                </div>
+            </div>
+            <div class="right-footer">
+                    <div class="right-footer-1">
+                        <h2>About Us</h2>
+                        <div class="right-list">
+                            <a class="list-item">Newsroom</a>
+                            <a class="list-item">Investor relations</a>
+                            <a class="list-item">Global citizenship</a>
+                            <a class="list-item">Safety</a>
+                            <a class="list-item">Blog</a>
+                            <a class="list-item">Careers</a>
+                            <a class="list-item">Gift cards</a>
+                            <a class="list-item">Super Jobs</a>
+                        </div>
+                    </div>
+                    <div class="right-footer-2">
+                        <h2 class="our-products">Our Products</h2>
+                        <div class="left-list">
+                            <a class="list-item">Fly</a>
+                            <a class="list-item">Drive</a>
+                            <a class="list-item">Eat</a>
+                            <a class="list-item">Business</a>
+                            <a class="list-item">Freight</a>
+                            <a class="list-item">Health</a>
+                            <a class="list-item">Ride</a>
+                            <a class="list-item">Super Works</a>
+                            <a class="list-item">Advanced Group</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-middle"></div>
+        <div class="footer-bottom">
+            <div class="last-left">
+                <i class="fas fa-copyright"></i>
+                <h4 class="super-copyright">2019 Super Technologies Inc.</h4>
+            </div>
+            <div class="last-middle">
+                <h4>Privacy</h4>
+                <h4>Accessibility</h4>
+                <h4>Terms</h4>
+            </div>
+            <div class="last-right">
+                    <i class="fab fa-facebook-f fa-lg" style="padding:8px;"></i>
+                    <i class="fab fa-twitter fa-lg" style="padding:8px;"></i>
+                    <i class="fab fa-youtube fa-lg" style="padding:8px;"></i>
+                    <i class="fab fa-linkedin fa-lg" style="padding:8px;"></i>
+                    <i class="fab fa-instagram fa-lg" style="padding:8px;"></i>
+
+            </div>
+        </div>
+    </footer>
+<script type="application/javascript" language="javascript" src="../SEI-OWLS-P1/js/validation.js"></script>
+</body>
+
+</html>
